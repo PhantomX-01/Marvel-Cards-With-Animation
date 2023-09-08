@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(65, 17, 18), rgb(18, 30, 48));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+}
+
+.card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: #fff;
+    position: relative;
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(17px);
+    border-radius: 10px;
+    box-shadow: rgba(94, 94, 94, 0.24) 0px 3px 8px;
+}
+
+.card-1 .content{
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.card-1 .heading{
+    font-size: 2.8rem;
+    color: rgb(65, 17, 18);
+}
+
+.card-1 .para{
+    margin-top: 15px;
+    width: 12vw;
+    font-size: 1.2rem;
+    transition: 0.4s;
+    opacity: 0;
+    color: rgb(199, 167, 114);
+}
+
+.card-1 .btn{
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: none;
+    border: 2px solid rgb(65, 17, 18);
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(199, 167, 114);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-1 .btn:hover{
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(13px);
+    color: rgb(199, 167, 114);
+}
+
+.card-1:hover .para,
+.card-1:hover .btn{
+    opacity: 1;
+}
+
+.card-1 img{
+    position: absolute;
+    top: -55%;
+    left: 25%;
+    width: 439px;
+    height: auto;
+    transition: 0.4s;
+}
+
+.card-1:hover img{
+    top: -62%;
+    left: 49%;
+    scale: 110%;
+}
+
+.card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: #fff;
+    position: relative;
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(17px);
+    border-radius: 10px;
+    box-shadow: rgba(94, 94, 94, 0.24) 0px 3px 8px;
+}
+
+.card-2 .content{
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.card-2 .heading{
+    font-size: 2.2rem;
+    transition: 0.4s;
+    color: rgb(18, 30, 48);
+    pointer-events: none;
+}
+
+.card-2 .para{
+    margin-top: 15px;
+    width: 12vw;
+    font-size: 1.15rem;
+    transition: 0.4s;
+    opacity: 0;
+    color: rgb(255, 249, 249);
+}
+
+.card-2 .btn{
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: none;
+    border: 2px solid rgb(18, 30, 48);
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 249, 249);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-2 .btn:hover{
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(13px);
+    color: rgb(255, 249, 249);
+}
+
+.card-2:hover .para,
+.card-2:hover .btn{
+    opacity: 1;
+}
+
+.card-2 img{
+    position: absolute;
+    top: -53%;
+    left: 47%;
+    width: 247px;
+    height: auto;
+    transition: 0.4s;
+}
+
+.card-2:hover img{
+    top: -60%;
+    left: 64%;
+    scale: 110%;
+}
+
+h2{
+    position: absolute;
+    top: 30px;
+    margin: 0 auto;
+    font-size: 2vw;
+    font-weight: 900;
+    background: linear-gradient(
+            to right, rgb(23, 70, 141), rgb(199, 34, 37));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
